@@ -31,12 +31,17 @@ Parameters
 
 Query Parameters
 ```filters```: An array of filters to apply to the responses. Each filter should have the following structure:
-visit https://www.fillout.com/help/fillout-rest-api for more optional query params like ```limit, offset, sort``` 
+visit https://www.fillout.com/help/fillout-rest-api for more optional query params like ```limit, offset, sort, afterDate``` 
 
 Example Request
+
+specify ```limit=100```, ```sort=ASC```, the ```filters``` field below indicates schedule date `greater than` '2024-03-29...'
 ```
-GET /cLZojxk94ous/filteredResponses?filters=%5B%7B%22id%22%3A%20%22nameId%22%2C%20%22condition%22%3A%20%22equals%22%2C%20%22value%22%3A%20%22Timmy%22%7D%2C%7B%22id%22%3A%20%22birthdayId%22%2C%20%22condition%22%3A%20%22greater_than%22%2C%20%22value%22%3A%20%222024-02-23T05%3A01%3A47.691Z%22%7D%5D
+GET /cLZojxk94ous/filteredResponses?limit=100&filters=%5B%7B%22id%22%3A%22dSRAe3hygqVwTpPK69p5td%22%2C%22condition%22%3A%22greater_than%22%2C%22value%22%3A%222024-03-29T05%3A01%3A47.691Z%22%7D%5D&sort=asc
 ```
+or visit Railway app here https://forms-production.up.railway.app/cLZojxk94ous/filteredResponses?afterDate=2024-02-26T20%3A49%3A43.783Z&limit=2&offset=2&filters=%5B%7B%22id%22%3A%22dSRAe3hygqVwTpPK69p5td%22%2C%22condition%22%3A%22greater_than%22%2C%22value%22%3A%222024-02-02T05%3A01%3A47.691Z%22%7D%5D&=
+
+
 Example Response
 ```
 {
