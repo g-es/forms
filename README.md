@@ -14,6 +14,13 @@ Add your API key
 npm install
 npm start
 ```
+
+## Test endpoint and filter
+
+```
+npm test
+```
+
 ## Endpoint
 
 ```plaintext
@@ -51,6 +58,7 @@ Example Response
       ],
       "submissionId": "abc",
       "submissionTime": "2024-05-16T23:20:05.324Z",
+      ...
     },
   ],
   "totalResponses": 1,
